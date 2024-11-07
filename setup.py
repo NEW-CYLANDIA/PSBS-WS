@@ -40,7 +40,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'psbsws=psbs.psbs:_main'
+            'psbs=psbs.psbs:_main'
         ],
     },
 )
