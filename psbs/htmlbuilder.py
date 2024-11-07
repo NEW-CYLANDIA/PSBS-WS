@@ -40,17 +40,17 @@ def build_html(engine, source):
         PSBSError: If any errors occur during the building process.
     """
     # Fetch the standalone inlined HTML template
-    print(url_join(engine, "standalone_inlined.txt"))
-    standalone_url = url_join(engine, "standalone_inlined.txt")
-    response = get(standalone_url, timeout=5)
-    if response.status_code != 200:
-        err_message = []
-        err_message.append("Error: Can't build html game")
-        err_message.append(f"  Unable to download {standalone_url}")
-        err_message.append(f"  Server response: {response.status_code}")
-        raise PSBSError("\n".join(err_message))
+    f = open("standalone_inlined.txt", "r")
+    # standalone_url = url_join(engine, "standalone_inlined.txt")
+    # response = get(standalone_url, timeout=5)
+    # if response.status_code != 200:
+    #     err_message = []
+    #     err_message.append("Error: Can't build html game")
+    #     err_message.append(f"  Unable to download {standalone_url}")
+    #     err_message.append(f"  Server response: {response.status_code}")
+    #     raise PSBSError("\n".join(err_message))
 
-    standalone_html = response.content.decode("UTF-8")
+    standalone_html = f.read()
     parser = PSParser(source)
     prelude_options = parser.prelude_options
 
