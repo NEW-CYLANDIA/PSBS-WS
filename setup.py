@@ -6,7 +6,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(
-    name='psbs-ws',
+    name='psbs',
     version='0.3.3',
     python_requires='>=3.8',
     description='PuzzleScript Build System Websocket',
