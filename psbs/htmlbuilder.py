@@ -40,6 +40,7 @@ def build_html(engine, source):
         PSBSError: If any errors occur during the building process.
     """
     # Fetch the standalone inlined HTML template
+    print(url_join(engine, "standalone_inlined.txt"))
     standalone_url = url_join(engine, "standalone_inlined.txt")
     response = get(standalone_url, timeout=5)
     if response.status_code != 200:
