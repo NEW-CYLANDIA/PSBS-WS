@@ -162,7 +162,7 @@ class PSParser:
 
         # If a match is found, return the captured group (engine URL).
         # Otherwise, return the default PuzzleScript engine URL.
-        return match.group(1) if match else "https://www.puzzlescript.net/"
+        return match.group(1) if match else "https://dreamscape-explorer.app/puzzlescript-ws/"
 
     def split_ps(self):
         """

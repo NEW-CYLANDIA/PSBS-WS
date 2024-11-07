@@ -29,7 +29,7 @@ def get_config(config_file=None):
     # Define default values
     defaults = {
         "gist_id": "",
-        "engine": "https://www.puzzlescript.net/",
+        "engine": "https://dreamscape-explorer.app/puzzlescript-ws/",
         "template": "main.pss",
         "user_extensions": [],
     }
