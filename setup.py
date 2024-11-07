@@ -6,10 +6,10 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(
-    name='psbs',
+    name='psbs-ws',
     version='0.3.3',
     python_requires='>=3.8',
-    description='PuzzleScript Build System',
+    description='PuzzleScript Build System Websocket',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='J.C. Miller',
@@ -40,7 +40,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'psbs=psbs.psbs:_main'
+            'psbsws=psbs.psbs:_main'
         ],
     },
 )
