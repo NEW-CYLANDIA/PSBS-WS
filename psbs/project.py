@@ -215,7 +215,7 @@ class PSBSProject:
             PSBSError: If any errors occur during project creation.
         """
         source = ""
-        engine = "https://www.puzzlescript.net/"
+        engine = "https://dreamscape-explorer.app/puzzlescript-ws/"
 
         # Determine the source of the PuzzleScript code
         if file:
